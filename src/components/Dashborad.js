@@ -41,18 +41,18 @@ export default function Dashboard(props) {
         {userData.length > 0 &&
           userData.map((result, i) => (
             <div className="bg-gray-400 grid w-1/4 p-8">
-              <p key={i}>
+              <p>
                 Fullname: {result?.firstname + " " + result?.lastname}
               </p>
-              <p key={i}>Email: {result?.email}</p>
-              <p key={i}>Contact: {result?.countrycode + result?.mobile} </p>
-              <p key={i}>
+              <p>Email: {result?.email}</p>
+              <p>Contact: {result?.countrycode + result?.mobile} </p>
+              <p>
                 Address: {result?.address1 + " " + result?.address2}
               </p>
-              <p key={i}>Zipcode: {result?.zipcode}</p>
-              <p key={i}>City: {result?.city}</p>
-              <p key={i}>State: {result?.state}</p>
-              <p key={i}>Country: {result?.country}</p>
+              <p>Zipcode: {result?.zipcode}</p>
+              <p>City: {result?.city}</p>
+              <p>State: {result?.state}</p>
+              <p>Country: {result?.country}</p>
               <Link
                 className="  my-3   py-4 w-full text-white text-center font-semibold tracking-tight bg-indigo-500 hover:bg-indigo-600 rounded-lg focus:ring-4 focus:ring-indigo-300 transition duration-200"
                 to={`/create?id=${result?._id}`}

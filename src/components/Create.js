@@ -123,10 +123,7 @@ export default function Create() {
     }
     console.log("two");
   }, [countryCca, stateIso]);
-
-  console.log(countryCca, "countryCca");
-  console.log(stateIso, "stateIso");
-
+  
   //  handling input change
 
   const handleChange = (event) => {
